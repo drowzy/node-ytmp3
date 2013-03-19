@@ -41,6 +41,7 @@ function convert (source, destination) {
 
     var proc = new ffmpeg({ source: source , nolog: false})
         .withAudioCodec('libmp3lame')
+        .withAudioBitrate('128k')
         .toFormat('mp3')
         .saveToFile(destination, function( stdout, stderr){
             if(stderr){
