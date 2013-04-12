@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// node-ytdl, ffmpeg, ffmpeg libavcodec-extra-53, commander
 
 var fs = require('fs'),
     ffmpeg = require('fluent-ffmpeg'),
