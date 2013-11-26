@@ -15,7 +15,7 @@ program
 
     if(program.url && program.output) {
       console.log("Downloading");
-      dlyt(program.url, program.output , program.covert);
+      ytdl(program.url, program.output , program.covert);
     }
     else {
       console.log("URL or output file not defined");
@@ -42,6 +42,5 @@ function convert (source, destination) {
     .saveToFile(destination, function( stdout, stderr){
       stderr ? console.log(stderr) : console.log('file converted successfully');
     });
-
 }
 
