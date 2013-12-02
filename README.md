@@ -1,4 +1,24 @@
 node-ytmp3
 ==========
 
-A node.js youtube -> mp3 converter. Requires node modules 'ytdl' 'fluent-ffmpeg' and 'commander'. 
+## Prerequisits
+
+This script uses FFMPEG for conversion which means that it needs to be installed on the system.
+	
+    $ sudo apt-get install ffmpeg
+
+And the mp3 codec is not included(I think)
+
+    $ sudo apt-get install libavcodec-extra-53
+
+Or
+
+    $ sudo apt-get install libmp3lame0
+
+## Usage
+
+To download and convert a youtube video to mp3 
+
+		$ ./node-ytmp3.js -u http://www.youtube.com/watch?v=sFrNsSnk8GM -f mp3
+
+Where option -u is the url to the youtube video & -f is the format (mp3 or flv).
