@@ -1,4 +1,4 @@
-node-ytmp3
+ytmp3
 ==========
 
 ## Prerequisits
@@ -14,11 +14,16 @@ And the mp3 codec is not included(I think)
 Or
 
     $ sudo apt-get install libmp3lame0
+## Installation
+
+Install from npm:
+
+		$ npm install -g ytmp3
 
 ## Usage
 
 To download and convert a youtube video to mp3 
 
-		$ ./node-ytmp3.js -u http://www.youtube.com/watch?v=sFrNsSnk8GM -f mp3
+		$ ytmp3 -u http://www.youtube.com/watch?v=sFrNsSnk8GM -f mp3
 
 Where option -u is the url to the youtube video & -f is the format (mp3 or flv).
