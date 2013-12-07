@@ -50,7 +50,7 @@ function convert (source, destination) {
     .withAudioCodec('libmp3lame')
     .toFormat('mp3')
     .saveToFile(destination, function(stdout, stderr) {
-        console.log('----- file converted successfully! -----');
+          console.log('----- file converted successfully! -----');
         fs.unlink(source, function(err) {
           console.log("----- Removing temporary file: " + source);         
         });

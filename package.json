@@ -1,8 +1,16 @@
 {
-      "name": "node-ytmp3",
-      "version": "0.0.1",
-      "description": "Node.js module to download/convert youtube videos to MP3 files",
-      "author": "Drowzyorginal <simon.thornqvist@gmail.com>",
+      "name": "ytmp3",
+      "version": "0.1.0",
+      "description": "Script to download/convert youtube videos to MP3 files",
+      "author": "Simon Thörnqvist <simon.thornqvist@gmail.com>",
+      "keywords": ["youtube", "mp3", "converter"],
+      "main": "index.js",
+      "bin": { "ytmp3": "index.js"},
+      "preferGlobal": "true",
+      "repository": {
+         "type": "git",
+         "url": "https://github.com/drowzyorginal/node-ytmp3.git"
+      },
       "dependencies": {
          "ytdl": "0.1.21", 
          "fluent-ffmpeg": "1.5.2",
