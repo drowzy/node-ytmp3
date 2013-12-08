@@ -1,6 +1,6 @@
 {
       "name": "ytmp3",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Script to download/convert youtube videos to MP3 files",
       "author": "Simon Thörnqvist <simon.thornqvist@gmail.com>",
       "keywords": ["youtube", "mp3", "converter"],
